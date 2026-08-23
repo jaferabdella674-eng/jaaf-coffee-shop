@@ -10,12 +10,12 @@ import { AuthProvider } from "./Context/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <AuthProvider>
-        <CartProvider>
+    <AuthProvider>
+      <CartProvider>
+        <BrowserRouter basename="/jaaf-coffee-shop">
           <App />
-        </CartProvider>
-      </AuthProvider>
-    </BrowserRouter>
+        </BrowserRouter>
+      </CartProvider>
+    </AuthProvider>
   </StrictMode>
 );
