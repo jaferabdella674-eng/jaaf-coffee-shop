@@ -9,13 +9,13 @@ import { CartProvider } from "./context/CartContext.jsx";
 import { AuthProvider } from "./Context/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  <AuthProvider>
   <StrictMode>
-    <AuthProvider>
-      <CartProvider>
-        <BrowserRouter basename="/jaaf-coffee-shop">
-          <App />
-        </BrowserRouter>
-      </CartProvider>
-    </AuthProvider>
+    <CartProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CartProvider>
   </StrictMode>
+  </AuthProvider>
 );
