@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <AuthProvider>
   <StrictMode>
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/jaaf-coffee-shop">
         <App />
       </BrowserRouter>
     </CartProvider>
